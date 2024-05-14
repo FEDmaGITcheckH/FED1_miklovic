@@ -5,50 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rentals Past Due</title>
-
-    <style>
-        .table {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .allTables {
-            width: 1200px;
-        }
-
-        .allTables th {
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            background-color: black;
-        }
-
-        .allTables td {
-            text-align: center;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../src/search.css">
 </head>
 <body>
     <div style="font-size: 50px; font-family: Impact; text-align: center;">
         <a href="../index.html">LMS</a>
     </div>
 
-    <form action="" method="get" autocomplete="on">
-        <label for="clen">Člen:</label>
-        <input type="text" id="clen" placeholder="Člen..." name="clen">
-
-        <label for="nazov">Názov:</label>
-        <input type="text" id="nazov" placeholder="Nazov..." name="nazov">
-
-        <label for="autor">Autor:</label>
-        <input type="text" id="autor" placeholder="Autor..." name="autor">
-
-        <label for="typ">Typ názvu:</label>
-        <input type="text" id="typ" placeholder="Typ názvu..." name="typ">
-
-        <input type="submit" value="Hľadať">
-    </form>
+    <div id="form-wrap">
+        <form action="" method="get" autocomplete="on">
+            <h1>Rentals Past Due</h1><br>
+            
+            <input type="text" id="member" placeholder="Member..." name="member">
+    
+            <input type="text" id="name" placeholder="Name..." name="name">
+    
+            <input type="text" id="author" placeholder="Author..." name="author">
+    
+            <input type="text" id="type" placeholder="Name type..." name="type">
+    
+            <input type="submit" value="Search">
+        </form>
+    </div>
 
     <div class="table">
         <table class="allTables">

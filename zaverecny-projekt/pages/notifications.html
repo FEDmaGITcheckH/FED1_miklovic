@@ -5,47 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notification</title>
-
-    <style>
-        .table {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .allTables {
-            width: 1200px;
-        }
-
-        .allTables th {
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            background-color: black;
-        }
-
-        .allTables td {
-            text-align: center;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="../src/search.css">
 </head>
 <body>
     <div style="font-size: 50px; font-family: Impact; text-align: center;">
         <a href="../index.html">LMS</a>
     </div>
 
-    <form action="" method="get" autocomplete="on">
-        <label for="clen">Člen:</label>
-        <input type="text" id="clen" placeholder="Člen..." name="clen">
+    <div id="form-wrap">
+        <form action="" method="get" autocomplete="on">
+            <h1>Notifications</h1><br>
 
-        <label for="predmet">Predmet:</label>
-        <input type="text" id="predmet" placeholder="Predmet..." name="predmet">
-
-        <label for="text">Text:</label>
-        <input type="text" id="text" placeholder="Text..." name="text">
-
-        <input type="submit" value="Hľadať">
-    </form>
+            <input type="text" id="member" placeholder="Member..." name="member">
+    
+            <input type="text" id="subject" placeholder="Subject..." name="subject">
+    
+            <input type="text" id="text" placeholder="Text..." name="text">
+    
+            <input type="submit" value="Search">
+        </form>
+    </div>
 
     <div class="table">
         <table class="allTables">

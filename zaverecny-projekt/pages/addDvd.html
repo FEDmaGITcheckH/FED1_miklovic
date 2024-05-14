@@ -2,29 +2,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add DVD</title>
+    <link rel="stylesheet" href="../src/add.css">
 </head>
 <body>
     <form action="" method="POST" autocomplete="on">
-        <label for="nazov">Názov:</label>
-        <input type="text" id="nazov" placeholder="Názov..." name="nazov">
+        <h1>Add new DVD</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name..." name="name" required>
 
-        <label for="autor">Autor:</label>
-        <input type="text" id="autor" placeholder="Autor..." name="autor">
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Author..." name="author" required>
 
-        <label for="rok">Rok vydania:</label>
-        <input type="number" id="rok" placeholder="Rok vydania..." name="rok">
+        <label for="year">Year of publication:</label>
+        <input type="number" id="year" placeholder="Year..." name="year" required>
 
-        <label for="copie">Dostupné kópie:</label>
-        <input type="number" id="copie" placeholder="Dostupné kópie..." name="copie">
+        <label for="copies">Available copies:</label>
+        <input type="number" id="copies" placeholder="Available copies..." name="copies" required>
 
-        <label for="celkom">Celkový počet kópií:</label>
-        <input type="number" id="celkom" placeholder="Celkový počet kópií..." name="celkom">
+        <label for="total">Total number of copies:</label>
+        <input type="number" id="total" placeholder="Total copies..." name="total" required>
 
-        <label for="cena">Cena DVD:</label>
-        <input type="number" id="cena" placeholder="Cena DVD..." name="cena">
+        <label for="price">DVD price:</label>
+        <input type="number" id="price" placeholder="DVD price..." name="price" required>
 
-        <input type="submit" value="Pridať">
+        <input type="submit" value="Add DVD">
     </form>
 </body>
 </html>

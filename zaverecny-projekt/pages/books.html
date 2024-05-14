@@ -5,28 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
+    <link rel="stylesheet" href="../src/search.css">
 
-    <style>
-        .table {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .allTables {
-            width: 1200px;
-        }
-
-        .allTables th {
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            background-color: black;
-        }
-
-        .allTables td {
-            text-align: center;
-        }
-        
+    <style>        
         .allTables tr:nth-child(even) {
             background-color: rgb(200, 200, 200);
         }
@@ -37,20 +18,20 @@
         <a href="../index.html">LMS</a>
     </div>
 
-    <form action="" method="GET" autocomplete="on">
-        <label for="autor">Autor:</label>
-        <input type="text" id="autor" placeholder="Autor" name="autor">
-
-        <label for="nazov">Názov:</label>
-        <input type="text" id="nazov" placeholder="Nazov" name="nazov">
-
-        <label for="isbn">ISBN:</label>
-        <input type="text" id="isbn" placeholder="ISBN..." name="isbn">
-
-        <input type="submit" value="Hľadať">
-    </form>
-    <br>
-    <a href="addBook.html">Pridať knihu</a>
+    <div id="form-wrap">
+        <form action="" method="GET" autocomplete="on">
+            <h1>Books</h1><br>
+    
+            <input type="text" id="author" placeholder="Author" name="author">
+    
+            <input type="text" id="name" placeholder="Name" name="name">
+    
+            <input type="text" id="isbn" placeholder="ISBN..." name="isbn">
+    
+            <input type="submit" value="Search">
+            <a id="add-button" href="addBook.html">Add Book</a>
+        </form>
+    </div>
 
     <div class="table">
         <table class="allTables">

@@ -5,35 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Member</title>
+    <link rel="stylesheet" href="../src/add.css">
+    <style>
+        .wrap {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div style="font-size: 50px; font-family: Impact; text-align: center;">
-        <a href="../index.html">LMS</a>
-    </div>
-
     <form action="" method="POST" autocomplete="on">
-        <label for="meno">Krstné meno:</label>
-        <input type="text" id="meno" placeholder="Krstné meno..." name="meno">
+        <h1>Add new Member</h1>
 
-        <label for="priezvysko">Priezvisko:</label>
-        <input type="text" id="priezvysko" placeholder="Priezvisko..." name="priezvysko">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" placeholder="First name..." name="firstName" required>
 
-        <label for="cislo">Osobné číslo:</label>
-        <input type="number" id="cislo" placeholder="Osobné číslo..." name="cislo">
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" placeholder="Last name..." name="lastName" required>
 
-        <label for="datum">Dátum narodenia:</label>
-        <input type="date" id="datum" placeholder="Dátum narodenia..." name="datum">
+        <label for="id">Personal ID:</label>
+        <input type="number" id="id" placeholder="Personal ID..." name="id" required>
 
-        <label >Pohlavie:</label>
-        <input type="radio" id="muz" name="pohlavie" value="muz">
-        <label for="muz">Muž</label>
-        <input type="radio" id="zena" name="pohlavie" value="zena">
-        <label for="zena">Žena</label>
+        <label for="date">Birth date:</label>
+        <input type="date" id="date" placeholder="Birth date..." name="date" required>
 
-        <input type="checkbox" id="suhlas" name="suhlas">
-        <label for="suhlas">Súhlasím s podmienkami</label>
+        <div class="wrap" id="gender-wrap">
+            <label >Gender:</label>
+            <input type="radio" id="man" name="gender" value="man" required>
+            <label for="man">Man</label>
+            <input type="radio" id="woman" name="gender" value="woman" required>
+            <label for="woman">Woman</label>
+        </div>
 
-        <input type="submit" value="Pridať">
+        <div class="wrap" id="agree-wrap">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the terms</label>
+        </div>
+
+        <input type="submit" value="Add Member">
     </form>
 </body>
 </html>
