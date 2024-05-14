@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        form {
+            background-color: whitesmoke;
+            width: 50%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        input,
+        select {
+            display: block; 
+            width: 100%; 
+            margin-bottom: 5px; 
+            box-sizing: border-box;
+            border-width: 1px;
+            border-radius: 0;
+        }
+
+        .tlacitko {
+            background-color: rgb(103, 165, 11);
+            color: white;
+            padding: 5px;
+        }
+
+        .radio {
+            display: inline;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post" autocomplete="on" target="_blank">
+        <h1>Kontaktný formulár</h1>
+        <input type="color" name="farba">
+
+        <input type="date" name="datum">
+
+        <label for="email" id="email" disabled>Email:</label>
+        <input type="email" name="email" placeholder="Email" maxlength="10" >
+
+        <input type="text" name="text" maxlength="10" required>
+
+        <select name="select" multiple>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+
+        <input type="text" id="prehliadac" name="prehliadac" list="prehliadace">
+        <datalist id="prehliadace">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+        </datalist>
+
+        <label for="1">1</label>
+        <input class="radio" name="numbers" id="1" type="radio">
+        <label for="2">2</label>
+        <input class="radio" name="numbers" id="2" type="radio">
+        <label for="3">3</label>
+        <input class="radio" name="numbers" id="3" type="radio">
+
+        <input type="checkbox" name="check" checked>
+
+        <input type="number" name="number" step="10" min="5" max="55">
+
+        <input type="range" name="range" step="10" min="5" max="55" value="15">
+
+        <input type="tel" name="tel">
+
+        <input type="time" name="time">
+
+        <input type="password" name="password">
+
+        <input type="reset" name="reset" value="Premaž formulár">
+        <input class="tlacitko" type="submit" value="Pošli dáta na server" name="send">
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: lightgray;
+        }
+
+        form {
+            background-color: white;
+            padding: 5px 20px;
+            border: 1px black solid;
+            width: 60%;
+        }
+
+        fieldset {
+            margin: 5px 0;
+        }
+
+        legend,
+        button[type="submit"] {
+            color: white;
+            background-color: #000;
+        }
+
+        legend {
+            padding: 3px 8px;
+        }
+
+        input {
+            margin: 0 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Formulár s fieldsetom</h1>
+
+        <fieldset>
+            <legend>Osobné údaje</legend>
+
+            <label for="">Meno: </label>
+            <input type="text" name="" id="" required><br>
+
+            <label for="">Priezvisko: </label>
+            <input type="text" name="" id="" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kontaktné údaje</legend>
+
+            <label for="">Email: </label>
+            <input type="email" name="" id="" required><br>
+
+            <label for="">Telefónne číslo: </label>
+            <input type="text" name="" id="" required>
+        </fieldset>
+
+        <button type="submit">Odoslať</button>
+    </form>
+</body>
+</html>
