@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,20 +7,23 @@
     <link rel="stylesheet" href="../src/add.css">
 </head>
 <body>
-    <form action="" method="POST" autocomplete="on">
+    <div style="font-size: 50px; font-family: Impact; text-align: center;">
+        <a href="../index.html">LMS</a>
+    </div>
+    <form action="addBook.html" method="POST" autocomplete="on">
         <h1>Add new Book</h1>
 
         <label for="author">Author:</label>
-        <input type="text" id="author" placeholder="Autor..." name="author">
+        <input type="text" id="author" placeholder="Autor..." name="author" required>
 
         <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Name..." name="name">
+        <input type="text" id="name" placeholder="Name..." name="name" required>
 
         <label for="isbn">ISBN:</label>
-        <input type="text" id="isbn" placeholder="ISBN..." name="isbn">
+        <input type="text" id="isbn" placeholder="ISBN..." name="isbn" required>
 
         <label for="pages">Number of pages:</label>
-        <input type="number" id="pages" placeholder="Number of pages..." name="pages">
+        <input type="number" id="pages" placeholder="Number of pages..." name="pages" required>
 
         <label for="copies">Available copies:</label>
         <input type="number" id="copies" placeholder="Available copies..." name="copies" required>
