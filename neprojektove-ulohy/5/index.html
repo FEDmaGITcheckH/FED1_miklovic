@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.3.1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #383434;
+            color: #fdfcfd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            gap: 15px;
+        }
+
+        header ul {
+            display: flex;
+            text-decoration: underline;
+            list-style-type: none;
+            gap: 15px;
+        }
+
+        header li {
+            opacity: 0.8;
+        }
+
+        section {
+            padding: 1rem;
+        }
+
+        section:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        aside {
+            background-color: #f4f4f4;
+            padding: 2rem;
+        }
+
+        aside h2 {
+            padding: 10px 0;
+        }
+
+        aside ul{
+            margin: 0 30px;
+            color: blue;
+        }
+
+        aside a {
+            color: blue;
+        }
+
+        aside p {
+            margin-top: 10px;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        figcaption {
+            opacity: 0.7;
+        }
+
+        img {
+            width: 22%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #383434;
+            color: white;
+            padding: 1.5rem;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer span {
+            font-size: small;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Semantic Element Website</h1>
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate saepe perspiciatis odio repellendus, omnis<br>
+                    tempore corrupti. Delectus officiis in temporibus exercitationem sequi commodi soluta voluptatem voluptatum<br>
+                    repudiandae laudantium? Aliquid, repellat!</p>
+
+                <h2>Our Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequatur assumenda nemo, at aspernatur,<br>
+                    harum nihil hic possimus blanditiis ullam laudantium magnam aperiam maiores, natus est id mollitia quibusdam<br>
+                    voluptas?</p>
+            </article>
+
+            <aside>
+                <h2>Related Links</h2>
+                <ul>
+                    <li><a href="">More About Us</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Character SVG</a></li>
+                </ul>
+                <p>Some more text to aside semantic element</p>
+            </aside>
+        </section>
+
+        <section>
+            <figure>
+                <img src="img/wild.jpg">
+                <figcaption>Fig. 1 - Forest</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <span>&copy; 2023 Maxo Miklovic. All rights reserved.</span>
+    </footer>
+</body>
+</html>

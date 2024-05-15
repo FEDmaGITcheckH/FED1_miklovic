@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semanticke elementy</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            background-color: rgb(249, 135, 135);
+            align-items: end;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        ul {
+            display: flex;
+            gap: 10px;
+            list-style-type: none;
+        }
+
+        li {
+            text-decoration: underline;
+            color: white;
+            cursor: pointer;
+        }
+
+        section {
+            margin: 4rem 0;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            background-color: rgb(187, 185, 185);
+            font-size: small;
+            padding: 10px;
+            font-style: italic;
+        }
+
+        figure {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            background-color: rgb(249, 135, 135);
+            align-items: end;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        article h2 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vitajte na stránke!</h1>
+        <nav>
+            <ul>
+                <li>Domov</li>
+                <li>Kontakt</li>
+                <li>O nas</li>
+                <li>Reklamacie</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Nejaky text</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum, sem vel consequat ultricies, lectus eros sodales urna, a tristique</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Prehliadace</h2>
+                <aside>Lorem ipsum dolor sit i lorem quis magna. Sed dictum, ante qed urna. Quisque sagittis ipsum risus, eu lacinia mi posuere ut. Nunc euismod diam eleifend pharetra malesuada. Aliquam elementum nisi augue, at sodales augue ultricies a. Ut dignissim justo nec velit tincidunt tempor. Cras vestibulum vel libero non rhoncus. Nunc accumsan vulputate pellentesque. Fusce viverra tortor eu leo congue, id pellentesque tortor porttitor. Vivamus augue est, efficitur et orci in, congue consequat quam. In feugiat luctus magna rutrum dictum. Mauris non leo porta diam egestas lobortis.</aside>
+                <h3>Google Chrome</h3>
+                <p>Chrome is the official web browser from Google, built to b fast, secure, and customizable. Download now and make it yours</p>
+                <h3>Mozzila Firefox</h3>
+                <p>Mozilla Firefox, or simply Firefox, is a free and open-source oped by the Moziltion and its subsidiary, the Mozilla Corporation. It uses the Gecko r</p>
+                <h3>Microsoft Edge</h3>
+                <p>Microsoft Edge is a proprietary cross-soft. Released in 2015 as part of Windows 10 and Xbox One,</p>
+            </article>
+        </section>
+
+        <section>
+            <figure>
+                <img src="https://www.w3schools.com/tags/pic_trulli.jpg" style="width:300px">
+                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+              </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tato stranka bola vytvorena v roku 2023</p>
+    </footer>
+</body>
+</html>

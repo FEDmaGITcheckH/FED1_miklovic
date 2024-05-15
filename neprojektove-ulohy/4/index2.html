@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="platno" width="100" height="100"></canvas>
+
+    <svg>
+        <circle cx="50" cy="50" r="48" stroke="blue" stroke-width="4" fill="green"/>
+        <circle cx="0" cy="0" r="48" stroke="red" stroke-width="4" fill="yellow"/>
+    </svg>
+    
+    <script>
+        let platno = document.getElementById('platno');
+        let kontext = platno.getContext("2d");
+
+        kontext.moveTo(0,0);
+        kontext.lineTo(50,50);
+
+        kontext.moveTo(100,0);
+        kontext.lineTo(50,50);
+
+        kontext.moveTo(0,100);
+        kontext.lineTo(50,50);
+
+        kontext.moveTo(100,100);
+        kontext.lineTo(50,50);
+
+        kontext.stroke();
+    </script>
+</body>
+</html>

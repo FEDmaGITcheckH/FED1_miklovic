@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gingerbread</title>
+    <style>
+        header {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            font-family: cursive;
+            margin: 10px;
+            top: 0;
+            right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #cd803d;
+        }
+
+        .gingerbread .body {
+            fill: #cd803d;
+        }
+
+        .gingerbread .eye {
+            fill: white;
+        }
+
+        .gingerbread .mouth {
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+        }
+
+        .gingerbread .bones {
+            stroke: #cd803d;
+            stroke-width: 35px;
+            stroke-linecap: round;
+        }
+
+        .gingerbread .cap {
+            fill: rgb(99, 99, 99);
+            stroke: rgb(37, 37, 37);
+        }
+
+        .gingerbread .bone-skull {
+            stroke: black;
+            stroke-width: 1px;
+            stroke-linecap: round;
+        }
+
+        .gingerbread .head-skull,
+        .gingerbread .in-eye-skull {
+            fill: black;
+        }
+
+        .gingerbread .eye-skull {
+            fill: white;
+        }
+
+        .gingerbread .mouth-skull {
+            fill: none;
+            stroke: white;
+            stroke-width: 0.2px;
+        }
+        
+        #author {
+            font-family: cursive;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> 
+        <span>Design Name: Gingerbread Pirate</span>
+        <span>Design Template: <a href="https://www.freecodecamp.org/news/svg-tutorial-learn-to-code-images/">Here</a></span>
+        <span>Design Last Update: 15. 5. 2024</span>
+    </header>
+
+    <svg class="gingerbread" width="100%" height="100%" viewBox="-100 -100 200 200">
+        <!-- GINGERBREAD -->
+        <circle class="body" cx="0" cy="-50" r="30"/>
+      
+        <circle class="eye" cx="-12" cy="-55" r="3"/>
+        <circle class="eye" cx="12" cy="-55" r="3"/>
+        <rect class="mouth" x="-10" y="-40" width="20" height="5" rx="2"/>
+      
+        <line class="bones" x1="-40" y1="-10" x2="40" y2="-10"/>
+        <line class="bones" x1="-25" y1="50" x2="0" y2="-15"/>
+        <line class="bones" x1="25" y1="50" x2="0" y2="-15"/>
+      
+        <circle class="button" cx="0" cy="-10" r="5"/>
+        <circle class="button" cx="0" cy="10" r="5"/>
+
+        <!-- HAT DECORATION -->
+        <path class="cap" d="M -30,-50 A 30,30 0 0,1 30,-50 L 30,-70 L -30,-50"/>
+ 
+        <!-- SKULL -->
+        <line class="bone-skull" x1="0" y1="-75" x2="-10" y2="-65"/>
+        <line class="bone-skull" x1="0" y1="-65" x2="-10" y2="-75"/>
+
+        <circle class="head-skull" cx="-5" cy="-70" r="4"/>
+        <circle class="head-skull" cx="-5" cy="-67" r="2.5"/>
+
+        <circle class="eye-skull" cx="-3.5" cy="-70" r="1"/>
+        <circle class="eye-skull" cx="-6.5" cy="-70" r="1"/>
+
+        <circle class="in-eye-skull" cx="-4" cy="-70" r="0.5"/>
+        <circle class="in-eye-skull" cx="-6" cy="-70" r="0.5"/>
+
+        <rect class="mouth-skull" x="-6" y="-68" width="2" height="0.5" rx="1" fill="white"/>
+      </svg>
+
+      <div>
+
+      </div>
+
+      <span id="author">&copy;Author of design: Maximilián Miklovič</span>
+</body>
+</html>
