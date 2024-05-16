@@ -41,8 +41,13 @@ input[type="submit"],
     justify-content: center;
     align-items: center;
 }
+
 .allTables {
     width: 1200px;
+}
+
+.evenTables tr:nth-child(even) {
+    background-color: rgb(200, 200, 200);
 }
 
 .allTables th {
@@ -54,4 +59,14 @@ input[type="submit"],
 
 .allTables td {
     text-align: center;
+}
+
+#title-wrap {
+    display: flex; 
+    align-items: center;
+    gap: 7px;
+}
+
+#title-icon {
+    font-size: x-large;
 }

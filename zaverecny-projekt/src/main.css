@@ -10,6 +10,7 @@
     font-size: 18px;
     background-color: #303030;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-link {
@@ -72,4 +73,40 @@
     right: 0;
     top: 0;
     z-index: 4;
+}
+
+.white-icon {
+    color: #ffffff;
+}
+
+.grey-background {
+    background-color: grey;
+}
+
+.black-background {
+    background-color: black;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.vertical-top-align {
+    vertical-align: top;
+}
+
+.italic-style {
+    font-style: italic;
+}
+
+.bold-weight {
+    font-weight: bold;
+}
+
+.text-white {
+    color: white;
+}
+
+.none-decoration {
+    text-decoration: none;
 }

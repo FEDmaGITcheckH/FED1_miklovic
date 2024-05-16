@@ -1,0 +1,42 @@
+body {
+    background-image: url(../img/background_index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    width: 40%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F6F6;
+    padding: 4em 2rem;
+}
+
+#content h2 {
+    color: #C70202;
+    border-bottom: 1px grey solid;
+    text-shadow: 1px 1px 2px;
+    text-decoration: overline;
+}
+
+#content a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+#content a:visited {
+    color: violet;
+}
+
+#content a:hover {
+    color: red;
+    text-decoration: underline;
+}

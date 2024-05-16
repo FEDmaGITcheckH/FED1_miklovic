@@ -5,15 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
-    <link rel="stylesheet" href="../src/search.css">
+    <link rel="stylesheet" href="../src/tables.css">
     <link rel="stylesheet" href="../src/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>        
-        .allTables tr:nth-child(even) {
-            background-color: rgb(200, 200, 200);
-        }
-    </style>
 </head>
 <body>
     <div id="logo-wrap">
@@ -29,16 +23,16 @@
         <p><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i>Home</a></p>
         <p><a class="nav-link" href="titles.html"><i class="fa-solid fa-book"></i>Titles</a></p>
         <p><a class="nav-link" href="members.html"><i class="fa-solid fa-users"></i>Members</a></p>
-        <p><a class="nav-link" href="rentals.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Rentals</a></p>
-        <p><a class="nav-link" href="notifications.html"><i class="fa-solid fa-bookmark" style="color: #ffffff;"></i>Notifications</a></p>
-        <p><a class="nav-link" href=""><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>Guide</a></p>
+        <p><a class="nav-link" href="rentals.html"><i class="fa-solid fa-address-book white-icon"></i>Rentals</a></p>
+        <p><a class="nav-link" href="notifications.html"><i class="fa-solid fa-bookmark white-icon"></i>Notifications</a></p>
+        <p><a class="nav-link" href="guide.html"><i class="fa-solid fa-circle-info white-icon"></i>Guide</a></p>
     </div>
 
     <div id="form-wrap">
         <form action="books.html" method="GET" autocomplete="on">
             
-            <div style="display: flex; align-items: center; gap: 7px;">
-                <i style="font-size: x-large;" class="fa-solid fa-book"></i>
+            <div id="title-wrap">
+                <i id="title-icon" class="fa-solid fa-book"></i>
                 <h1>Books</h1>
             </div><br>
     
@@ -54,7 +48,7 @@
     </div>
 
     <div class="table">
-        <table class="allTables">
+        <table class="allTables evenTables">
             <tr>
                 <th>TITLE</th>
                 <th>AUTHOR</th>

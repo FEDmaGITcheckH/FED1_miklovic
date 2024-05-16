@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="../src/add.css">
     <link rel="stylesheet" href="../src/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .wrap {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 <body>
     <div id="logo-wrap">
@@ -28,13 +23,13 @@
         <p><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i>Home</a></p>
         <p><a class="nav-link" href="titles.html"><i class="fa-solid fa-book"></i>Titles</a></p>
         <p><a class="nav-link" href="members.html"><i class="fa-solid fa-users"></i>Members</a></p>
-        <p><a class="nav-link" href="rentals.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Rentals</a></p>
-        <p><a class="nav-link" href="notifications.html"><i class="fa-solid fa-bookmark" style="color: #ffffff;"></i>Notifications</a></p>
-        <p><a class="nav-link" href=""><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>Guide</a></p>
+        <p><a class="nav-link" href="rentals.html"><i class="fa-solid fa-address-book white-icon"></i>Rentals</a></p>
+        <p><a class="nav-link" href="notifications.html"><i class="fa-solid fa-bookmark white-icon"></i>Notifications</a></p>
+        <p><a class="nav-link" href="guide.html"><i class="fa-solid fa-circle-info white-icon"></i>Guide</a></p>
     </div>
 
     <form action="addMember.html" method="POST" autocomplete="on">
-        <h1>Add new Member</h1>
+        <h1>Add new Member</h1><br>
 
         <label for="firstName">First name:</label>
         <input type="text" id="firstName" placeholder="First name..." name="firstName" required>
@@ -54,12 +49,12 @@
             <label for="man">Man</label>
             <input type="radio" id="woman" name="gender" value="woman" required>
             <label for="woman">Woman</label>
-        </div>
+        </div><br>
 
         <div class="wrap" id="agree-wrap">
             <input type="checkbox" id="agree" name="agree" required>
             <label for="agree">I agree to the terms</label>
-        </div>
+        </div><br>
 
         <input type="submit" value="Add Member">
     </form>
