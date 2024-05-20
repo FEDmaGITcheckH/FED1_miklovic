@@ -21,9 +21,26 @@
     </div>
     <div id="menu">
         <p><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i>Home</a></p>
-        <p><a class="nav-link" href="titles.html"><i class="fa-solid fa-book"></i>Titles</a></p>
-        <p><a class="nav-link" href="members.html"><i class="fa-solid fa-users"></i>Members</a></p>
-        <p><a class="nav-link" href="rentals.html"><i class="fa-solid fa-address-book white-icon"></i>Rentals</a></p>
+        <div class="subpages"><a class="nav-link"><i class="fa-solid fa-book"></i>Titles</a>
+            <ul class="subpages-menu">
+                <li><a href="books.html">Books</a></li>
+                <li><a href="dvd.html">DVD</a></li>
+            </ul>
+        </div>
+        <div class="subpages"><a class="nav-link"><i class="fa-solid fa-users"></i>Members</a>
+            <ul class="subpages-menu">
+                <li><a href="allMembers.html">All members</a></li>
+                <li><a href="addMember.html">Add member</a></li>
+            </ul>
+        </div>
+        <div class="subpages"><a class="nav-link"><i class="fa-solid fa-address-book white-icon"></i>Rentals</a>
+            <ul class="subpages-menu">
+                <li><a href="allRentals.html">All rentals</a></li>
+                <li><a href="rentTitle.html">Rent a Title</a></li>
+                <li><a href="rentalsPastDue.html">Rentals Past Due</a></li>
+                <li><a href="queueOfRequests.html">Queue Of Requests</a></li>
+            </ul>
+        </div>
         <p><a class="nav-link" href="notifications.html"><i class="fa-solid fa-bookmark white-icon"></i>Notifications</a></p>
         <p><a class="nav-link" href="guide.html"><i class="fa-solid fa-circle-info white-icon"></i>Guide</a></p>
     </div>
@@ -31,20 +48,20 @@
     <form action="addMember.html" method="POST" autocomplete="on">
         <h1>Add new Member</h1><br>
 
-        <label for="firstName">First name:</label>
+        <label class="required-star" for="firstName">First name:</label>
         <input type="text" id="firstName" placeholder="First name..." name="firstName" required>
 
-        <label for="lastName">Last name:</label>
+        <label class="required-star" for="lastName">Last name:</label>
         <input type="text" id="lastName" placeholder="Last name..." name="lastName" required>
 
-        <label for="id">Personal ID:</label>
+        <label class="required-star" for="id">Personal ID:</label>
         <input type="number" id="id" placeholder="Personal ID..." name="id" required>
 
-        <label for="date">Birth date:</label>
+        <label class="required-star" for="date">Birth date:</label>
         <input type="date" id="date" name="date" required>
 
         <div class="wrap" id="gender-wrap">
-            <label >Gender:</label>
+            <label class="required-star" >Gender:</label>
             <input type="radio" id="man" name="gender" value="man" required>
             <label for="man">Man</label>
             <input type="radio" id="woman" name="gender" value="woman" required>
@@ -53,7 +70,7 @@
 
         <div class="wrap" id="agree-wrap">
             <input type="checkbox" id="agree" name="agree" required>
-            <label for="agree">I agree to the terms</label>
+            <label class="required-star" for="agree">I agree to the terms</label>
         </div><br>
 
         <input type="submit" value="Add Member">

@@ -1,0 +1,17 @@
+.books-result:not(#structure) tr:nth-child(2) td:first-child:hover::after {
+    position: absolute;
+    content: "Knižka Múdrosti / Múdry Ján";
+    color: white;
+    background-color: red;
+    padding: 4px;
+    transform: translateY(-100%);
+}
+
+.books-result:not(#structure) tr:nth-child(3) td:first-child:hover::after {
+    position: absolute;
+    content: "Programovanie / Novák Ján";
+    color: white;
+    background-color: red;
+    padding: 4px;
+    transform: translateY(-100%);
+}

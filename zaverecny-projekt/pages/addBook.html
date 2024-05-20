@@ -20,9 +20,26 @@
     </div>
     <div id="menu">
         <p><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i>Home</a></p>
-        <p><a class="nav-link" href="titles.html"><i class="fa-solid fa-book"></i>Titles</a></p>
-        <p><a class="nav-link" href="members.html"><i class="fa-solid fa-users"></i>Members</a></p>
-        <p><a class="nav-link" href="rentals.html"><i class="fa-solid fa-address-book white-icon"></i>Rentals</a></p>
+        <div class="subpages"><a class="nav-link"><i class="fa-solid fa-book"></i>Titles</a>
+            <ul class="subpages-menu">
+                <li><a href="books.html">Books</a></li>
+                <li><a href="dvd.html">DVD</a></li>
+            </ul>
+        </div>
+        <div class="subpages"><a class="nav-link"><i class="fa-solid fa-users"></i>Members</a>
+            <ul class="subpages-menu">
+                <li><a href="allMembers.html">All members</a></li>
+                <li><a href="addMember.html">Add member</a></li>
+            </ul>
+        </div>
+        <div class="subpages"><a class="nav-link"><i class="fa-solid fa-address-book white-icon"></i>Rentals</a>
+            <ul class="subpages-menu">
+                <li><a href="allRentals.html">All rentals</a></li>
+                <li><a href="rentTitle.html">Rent a Title</a></li>
+                <li><a href="rentalsPastDue.html">Rentals Past Due</a></li>
+                <li><a href="queueOfRequests.html">Queue Of Requests</a></li>
+            </ul>
+        </div>
         <p><a class="nav-link" href="notifications.html"><i class="fa-solid fa-bookmark white-icon"></i>Notifications</a></p>
         <p><a class="nav-link" href="guide.html"><i class="fa-solid fa-circle-info white-icon"></i>Guide</a></p>
     </div>
@@ -30,25 +47,25 @@
     <form action="addBook.html" method="POST" autocomplete="on">
         <h1>Add new Book</h1><br>
 
-        <label for="author">Author:</label>
+        <label class="required-star" for="author">Author:</label>
         <input type="text" id="author" placeholder="Autor..." name="author" required>
 
-        <label for="name">Name:</label>
+        <label class="required-star" for="name">Name:</label>
         <input type="text" id="name" placeholder="Name..." name="name" required>
 
-        <label for="isbn">ISBN:</label>
+        <label class="required-star" for="isbn">ISBN:</label>
         <input type="text" id="isbn" placeholder="ISBN..." name="isbn" required>
 
-        <label for="pages">Number of pages:</label>
+        <label class="required-star" for="pages">Number of pages:</label>
         <input type="number" id="pages" placeholder="Number of pages..." name="pages" required>
 
-        <label for="copies">Available copies:</label>
+        <label class="required-star" for="copies">Available copies:</label>
         <input type="number" id="copies" placeholder="Available copies..." name="copies" required>
 
-        <label for="total">Total number of copies:</label>
+        <label class="required-star" for="total">Total number of copies:</label>
         <input type="number" id="total" placeholder="Total copies..." name="total" required>
 
-        <label for="price">Book price:</label>
+        <label class="required-star" for="price">Book price:</label>
         <input type="number" id="price" placeholder="Book price..." name="price" required>
 
         <input type="submit" value="Add Book">

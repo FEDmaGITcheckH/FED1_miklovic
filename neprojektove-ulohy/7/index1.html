@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div-wrap {
+            height: 1000vh;
+        }
+
+        #title-wrap {
+            z-index: 999;
+        }
+
+        #para-wrap {
+            margin: 0;
+            background-color: aqua;
+            width: 100%;
+            text-align: center;
+            /*position: fixed;*/
+            position: sticky;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae pulvinar nunc, et tristique tortor. Mauris fringilla, urna et convallis gravida, metus lectus sodales risus, pharetra consectetur magna mauris euismod nulla. Phasellus iaculis nisl ut erat aliquet viverra. Integer ornare libero odio, in ultricies leo vehicula congue. In auctor tristique maximus. Vestibulum eu ligula eu ligula viverra volutpat. Vivamus feugiat, urna quis bibendum ultrices, erat massa dictum odio, in placerat neque mi finibus diam. Morbi vel volutpat lorem. Cras iaculis posuere lacus, ac cursus leo auctor in. Donec sed eros id lacus congue aliquet a sed sapien. Curabitur vitae quam non erat accumsan suscipit non vel sapien.</h5>
+    <p id="para-wrap">Toto je paragraf</p>
+    <h1 id="title-wrap">Toto je h1, ktoré je statické</h1>
+    <div id="div-wrap"></div>
+</body>
+</html>

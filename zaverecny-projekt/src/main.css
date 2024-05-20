@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 #menu {
     justify-content: center;
     align-items: center;
@@ -13,12 +14,48 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#menu ul {
+    list-style: none;
+    background-color: white;
+    padding: 10px 20px 10px 10px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+#menu ul li {
+    padding: 10px;
+}
+
+#menu ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.subpages-menu {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.subpages-menu li:hover{
+    background-color: #ddd;
+}
+
+.subpages:hover .subpages-menu{
+    opacity: 1;
+}
+
 .nav-link {
     color: white; 
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: #717070;
 }
 
 #logo-wrap {
@@ -109,4 +146,9 @@
 
 .none-decoration {
     text-decoration: none;
+}
+
+.required-star::after {
+    content: "*";
+    color: red;
 }

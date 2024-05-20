@@ -24,7 +24,11 @@ body {
     color: #C70202;
     border-bottom: 1px grey solid;
     text-shadow: 1px 1px 2px;
-    text-decoration: overline;
+}
+
+#content h2::first-letter {
+    color: darkblue;
+    font-size: 1.5em;
 }
 
 #content a:link {

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        body {
+            counter-reset: title;
+        }
+
+        h2 {
+            counter-reset: description;
+        }
+
+        h2::before {
+            counter-increment: title;
+            content: "Sekcia " counter(title) ". ";
+        }
+
+        p::before {
+            counter-increment: description;
+            content: counter(title) "." counter(description) " ";
+        }
+        */
+
+        h2, p {
+            display: none;
+        }
+
+        ol {
+            counter-reset: section;
+            list-style-type: none;
+        }
+        ol li {
+            counter-increment: section;
+            margin-bottom: 5px;
+        }
+        ol li:before {
+            content: counters(section, ".") " ";
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>položka</li>
+        <li>položka
+          <ol>
+            <li>položka</li>
+            <li>položka</li>
+            <li>položka
+              <ol>
+                <li>položka</li>
+                <li>položka</li>
+                <li>položka</li>
+              </ol>
+            </li>
+            <li>položka</li>
+          </ol>
+        </li>
+        <li>položka</li>
+        <li>položka</li>
+    </ol>
+      
+
+
+    <h2>Programovacie jazyky</h2>
+    <p>Java</p>
+    <p>C++</p>
+    <p>Python</p>
+
+    <h2>Skriptovacie jazyky</h2>
+    <p>JavaScript</p>
+    <p>jQuery</p>
+    <p>PHP</p>
+
+    <h2>CSS preprocesory</h2>
+    <p>Sass</p>
+    <p>Less</p>
+</body>
+</html>
