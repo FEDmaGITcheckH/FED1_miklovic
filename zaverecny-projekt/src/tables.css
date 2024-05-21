@@ -25,16 +25,31 @@ input {
 input[type="submit"],
 #add-button {
     padding: 5px 25px;
+    border: 1px black solid;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to top, green, white);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom, green, white);
 }
 
 #add-button,
 #add-button:active {
     font-size: 14px;
     color: black;
-    background-color: #f9ba14;
+    background: linear-gradient(to top, #f9ba14, white);
     text-decoration: none;
-    border: 1px black solid;
 }
+
+#add-button:hover {
+    background: linear-gradient(to bottom, #f9ba14, white);
+}
+
+
 
 .table {
     display: flex;

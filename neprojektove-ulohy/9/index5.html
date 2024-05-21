@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h1 {
+            position: relative;
+            animation: slideIn 2s forwards;
+        }
+
+        .box {
+            background-color: red;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #a {
+            width: 200px;
+            height: 200px;
+        }
+
+        #b {
+            width: 100px;
+            height: 100px;
+            animation: moveBox 5s infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        #a:hover {
+            animation: changeColors 5s infinite;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100vw);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes changeColors {
+            0% {
+                background-color: red;
+            }
+            20% {
+                background-color: yellow;
+            }
+            40% {
+                background-color: blue;
+            }
+            60% {
+                background-color: green;
+            }
+            80% {
+                background-color: red;
+            }
+        }   
+
+        @keyframes moveBox  {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+            25% {
+                top: 100;
+                left: 0;
+                background-color: yellow;
+            }
+            50% {
+                top: 100;
+                left: 100;
+                background-color: blue;
+            }
+            75% {
+               top: 0;
+               left: 100;
+               background-color: green;
+            }
+            100% {
+               top: 0;
+               left: 0;
+                background-color: red;
+            }
+        }   
+
+
+    </style>
+</head>
+<body>
+    <h1>Ahoj webinar</h1>
+    <div id="a" class="box"></div>
+    <div id="b" class="box"></div>
+</body>
+</html>

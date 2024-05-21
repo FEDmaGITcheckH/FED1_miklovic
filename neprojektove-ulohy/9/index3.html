@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+
+        #wrap {
+            position: relative;
+            top: 50;
+            left: 50;
+            transition: all 4s;
+        }
+        .squeare {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+        }
+
+        #a {
+            transform: skew(15deg, -10deg);
+            background-color: crimson;
+        }
+
+        #b {
+            background-color: lightcoral;
+            rotate: 45deg;
+        }
+
+        button{
+            padding: 10px;
+            background-color: lightcoral;
+            cursor: pointer;
+            color: white;
+        }
+
+        #buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #transform {
+            border: none;
+            transform: translate(350px, 50px);
+        }
+
+        #hover {
+            border: 2px black solid;
+        }
+
+        #hover:hover  {
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="squeare" id="a"></div>
+        <div class="squeare" id="b"></div>
+    </div>
+
+    <div id="buttons">
+        <button id="transform">Presunuty objekt</button>
+        <button id="hover">Hover me</button>
+    </div>
+
+</body>
+</html>

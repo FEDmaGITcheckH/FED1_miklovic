@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navy {
+            background-color: navy;
+            margin: 50px;
+            height: 300px;
+            width: 300px;
+        }
+
+        #a {
+            transition-property: background-color;
+            transition: all;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+        }   
+
+        #a:hover {
+            background-color: lightcoral;
+        }
+
+        #b {
+            transition-property: rotation;
+            transition: all;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+        }   
+
+        #b:hover {
+            transform: rotate(45deg);
+            background-color: lightcoral;
+        }
+
+        #c {
+            transition-property: scaling;
+            transition: all;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+        }   
+
+        #c:hover {
+            transform: rotate(45deg);
+            background-color: lightcoral;
+            width: 450px;
+            height: 450px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="a" class="navy"></div>
+    <div id="b" class="navy"></div>
+    <div id="c" class="navy"></div>
+</body>
+</html>
