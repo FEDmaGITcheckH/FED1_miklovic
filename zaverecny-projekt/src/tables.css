@@ -16,6 +16,13 @@ body {
     padding: 3rem;
 }
 
+#form-input-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 input {
     outline: none;
     padding: 5px;
@@ -43,6 +50,7 @@ input[type="submit"]:hover {
     color: black;
     background: linear-gradient(to top, #f9ba14, white);
     text-decoration: none;
+    background-size: 100px;
 }
 
 #add-button:hover {
@@ -66,7 +74,7 @@ input[type="submit"]:hover {
 }
 
 .allTables th {
-    font-size: 14px;
+    font-size: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: black;
@@ -84,4 +92,66 @@ input[type="submit"]:hover {
 
 #title-icon {
     font-size: x-large;
+}
+
+@media screen and (max-width: 420px) { 
+    body {
+        overflow: auto;
+    }
+
+    #form-wrap {
+        padding: 20px 10px;
+        height: fit-content;
+        box-sizing: border-box;
+        display: unset;
+        align-items: unset;
+        justify-content: unset;
+        background-color: transparent;
+    }
+
+    #form-wrap form { 
+        padding: 20px 10px;
+        background-color: #DCE8E8;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #add-button {
+        width: 100%;
+    }
+
+    .table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: scroll;
+        width: 100%;
+        display: block;
+    }
+
+    .table table {
+        width: fit-content;
+    }
+
+    #structure th,
+    #structure td {
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    #form-input-wrap {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #add-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

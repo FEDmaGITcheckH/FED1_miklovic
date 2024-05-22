@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: fit-content;
+            grid-gap: 10px;
+        }
+        
+        #container div {
+            box-sizing: border-box;
+            background-color: lightcoral;
+            width: 100px;
+            height: 70px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            padding: 0 0 0 20px;
+            color: white;
+            font-size: 2em;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template-areas: "..... header header"
+                                 "sidebar content content"
+                                 "sidebar content content"
+                                 "footer footer footer";
+            gap: 5px;
+            word-wrap: break-word;
+            word-break: break-all;
+            height: fit-content;
+            width: 200px;
+        }
+
+        #wrapper div {
+            color: white;
+            background-color: grey;
+            padding: 2px;
+            border-radius: 5px;
+            padding: 3px;
+        }
+
+        #reklama {
+            display: grid;
+            width: 400px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        #reklama div {
+            padding: 20px;
+            background-color: rgb(227, 110, 130);
+            color: white;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .re1 {
+            grid-row: 3/4;
+        }
+
+        .re2 {
+            grid-row: 5/6;
+        }
+
+        .re3 {
+            grid-row: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" style="display: none;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <div id="wrapper" style="display: none;">
+        <div style="grid-area: header; background-color: lightgray;">Header</div>
+        <div style="grid-area: sidebar;">Sidebar</div>
+        <div style="grid-area: content;">Pridame dbdhcvdjdhndsdjdhnddjdhnddjdhnddjdhnddjdhnd djdhnd</div>
+        <div style="grid-area: footer; background-color: lightgray;">Footer</div>
+    </div>
+
+    <div id="reklama" >
+        <p class="tx1">Lorem ipsum dolor sit amet, consectetur adipiscing ean lacinia laoreet</p>
+        <p class="tx2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae imperdiet diam. Aliquam es lacus, eleifend non  laoreet</p>
+        <p class="tx3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae imperdiet diam. Aliquam erat volutpat. Vivamus tellus lacus, eleifend non turpis rhoncus, pellentesque pellentesque orci. Donec id suscipit leo. Aliquam sit amet felis luctus, lobortis lacus vel, facilisis nulla. Ut et rhoncus lorem, sit amet efficitur nulla. Proin et rutrum dui. Mauris suscipit id nunc eu vestibulum. Etiam fermentum metus vitae scelerisque gravida. Aenean eu risus non felis pharetra feugiat ut quis sapien. Praesent et diam interdum mi varius feugiat eget sed mi.</p>
+        <div class="re1">Reklama</div>
+        <div class="re2">Dalsia reklama</div>
+        <div class="re3">Dalsia otravna reklama</div>
+
+    </div>
+</body>
+</html>

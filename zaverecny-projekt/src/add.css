@@ -32,3 +32,13 @@ input[type="submit"] {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 420px) {  
+    form {
+        width: 100%;
+    }
+
+    input[type="submit"] { 
+        width: 100%;
+    }
+}
