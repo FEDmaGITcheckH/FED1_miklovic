@@ -1,0 +1,74 @@
+.subpages:hover .subpages-menu{
+    opacity: 1;
+}
+
+#logo-wrap:hover #logo-img-1 {
+    animation-name: first-block-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first-block-anim {
+    0%   {left: 0; top: 0;}
+    25%  {left: 0; top: 10px;}
+    50%  {left: 10px; top: 10px;}
+    75%  {left: 10px; top: 0;}
+    100% {left: 0; top: 0;}
+}
+
+#logo-wrap:hover #logo-img-2 {
+    animation-name: second-block-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes second-block-anim {
+    0%   {left: 10px; top: 10px;}
+    25%  {left: 10px; top: 0;}
+    50%  {left: 0; top: 0;}
+    75%  {left: 0; top: 10px;}
+    100% {left: 10px; top: 10px;}
+}
+
+#logo-wrap:hover #logo-img-3 {
+    animation-name: third-block-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes third-block-anim {
+    0%   {left: 0; top: 10px;}
+    25%  {left: 10px; top: 10px;}
+    50%  {left: 10px; top: 0;}
+    75%  {left: 0; top: 0;}
+    100% {left: 0; top: 10px;}
+}
+
+#logo-wrap:hover #logo-img-4 {
+    animation-name: fourth-block-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fourth-block-anim {
+    0%   {left: 10px; top: 0;}
+    25%  {left: 0; top: 0;}
+    50%  {left: 0; top: 10px;}
+    75%  {left: 10px; top: 10px;}
+    100% {left: 10px; top: 0;}
+}
+
+@media screen and (max-width: 420px) {
+    .subpages:hover .subpages-menu{
+        display: block;
+        left: 0;
+        opacity: 1;
+        width: 100%;
+        height: auto;
+    }
+    
+    .subpages:hover .subpages-menu{
+       display: block;
+       width: 100%;
+    }
+}
