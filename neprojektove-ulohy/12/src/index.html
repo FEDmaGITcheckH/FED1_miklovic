@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../src/output.css" rel="stylesheet">
+</head>
+<body class="font-custom bg-[#f7fafd]">
+  <header class="flex py-7 items-center justify-between mx-14 border-b-2">
+    <h1 class="text-2xl font-bold text-[crimson]">Vitajte!</h1>
+    <ul class="flex gap-4">
+        <li class="hover:underline hover:text-[crimson]">Domov</li>
+        <li class="hover:underline hover:text-[crimson]">Detail</li>
+        <li class="hover:underline hover:text-[crimson]">Detail</li>
+        <li class="hover:underline hover:text-[crimson]">Cenník</li>
+        <li class="hover:underline hover:text-[crimson]">Projekty</li>
+        <li class="hover:underline hover:text-[crimson]">Kontakt</li>
+    </ul>
+  </header>
+  <main class="w-full flex items-center justify-center flex-col py-10 px-20">
+    <div class="flex items-center justify-center flex-col gap-6">
+        <h1 class="text-5xl font-bold">Vitajte na <a class="text-[crimson]" href="">webinári!</a></h1>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis scelerisque ante id volutpat. Aliquam nec dignissim velit, nec blandit nibh. Praesent mi nulla, congue eget dictum quis, euismod vitae mi. Nulla gravida ultricies sem nec viverra. Quisque fermentum mi id odio laoreet, et ultrices turpis vulputate. Aliquam blandit tellus ut auctor tristique. Sed luctus justo et felis ornare, ut porttitor massa mollis. Maecenas con</p>
+        <div class="flex gap-20 justify-center items-center text-white font-bold">
+            <a class="bg-[crimson] rounded-full px-6 py-3 hover:bg-white hover:text-[crimson] border-[crimson] border" href="">Viac informacii</a>
+            <a class="bg-[crimson] rounded-full px-6 py-3 hover:bg-white hover:text-[crimson] border-[crimson] border" href="">Stiahnut</a>
+        </div>
+    </div>
+    <div class="border-t-4 border-white mt-7 w-full">
+        <form class="flex flex-col justify-center items-center pt-10" action="">
+            <h2 class="text-3xl font-bold">Pošlite nám <a class="text-[crimson]" href="">spätnú väzbu</a></h2>
+
+            <label for="name">Meno a priezvisko</label>
+            <input class="mb-6 w-1/2 border-black border-2 rounded-lg px-2" id="name" type="text" placeholder="Janko Hraško">
+
+            <label for="email">Email</label>
+            <input class="mb-6 w-1/2 border-black border-2 rounded-lg px-2" id="email" type="email" placeholder="email@example.com">
+
+            <label for="comment">Vaša poznámka</label>
+            <textarea class="mb-6 w-1/2 h-60 border-black border-2 rounded-lg px-2 resize-none " id="comment" placeholder="Váš komentár..."></textarea>
+
+            <button type="submit" class="bg-[crimson] rounded-full px-6 py-3 text-white hover:bg-white hover:text-[crimson] border-[crimson] border">Poslať formulár</button>
+        </form>
+    </div>
+  </main>
+
+  <footer class="relative mx-14 py-7 flex items-start justify-around border-t-2">
+    <div class="flex items-center justify-center flex-col w-1/3">
+        <h3 class="text-2xl font-bold text-[crimson]">Text</h3><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis scelerisque ante id volutpat. Aliquam nec dignissim velit, nec blandit nibh. Praesent mi nulla, congue eget dictum quis, euismod vitae mi. Nulla gravida ultricies sem nec viverra. Quisque fermentum mi id odio laoreet, et ultrices turpis vulputate. Aliquam blandit tellus ut auctor tristique. Sed luctus justo et felis ornare, ut porttitor massa mollis. Maecenas con</p>
+    </div>
+
+    <div class="flex items-center justify-center flex-col w-1/3">
+        <h3 class="text-2xl font-bold text-[crimson]">Linky</h3><br>
+        <p>Podmienky <br> Zasady ochrany osobnych udajov</p>
+    </div>
+
+    <div class="flex items-start justify-center flex-col w-1/3">
+        <p>Kontaktujte nas:</p><br>
+        <p>webinar@metis.academy</p>
+    </div>
+
+    <p class="absolute bottom-0 left-1/2 transform -translate-x-28">© Stránka vytvorená na webinári</p>
+  </footer>
+</body>
+</html>
