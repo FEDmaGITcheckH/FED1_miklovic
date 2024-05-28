@@ -1,0 +1,31 @@
+.pointer {
+    cursor: pointer;
+}
+
+.halfwidth {
+    width: 50%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.small-text {
+    font-size: small;
+}
+
+#hover-logo {
+    display: none;
+}
+
+#title-wrap:hover #hover-logo {
+    display: unset;
+}
+
+#title-wrap:hover #classic-logo {
+    display: none;
+}
