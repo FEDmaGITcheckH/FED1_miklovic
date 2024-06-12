@@ -44,7 +44,7 @@
         <p><a class="nav-link" href="guide.html"><i class="fa-solid fa-circle-info white-icon"></i>Guide</a></p>
     </div>
 
-    <form action="addBook.html" method="POST" autocomplete="on">
+    <form action="" method="" autocomplete="on">
         <h1>Add new Book</h1><br>
 
         <label class="required-star" for="author">Author:</label>
@@ -68,7 +68,9 @@
         <label class="required-star" for="price">Book price:</label>
         <input type="number" id="price" placeholder="Book price..." name="price" required>
 
-        <input type="submit" value="Add Book">
+        <input type="submit" value="Add Book" onclick="add()">
     </form>
+
+    <script src="../script/script.js"></script>
 </body>
 </html>

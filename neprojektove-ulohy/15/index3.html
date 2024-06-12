@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<title>11.2.8 - Prevod mien</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-item {
+        display: flex;
+        gap: 5px;
+    }
+
+    .main {
+        padding: 10px 20px;
+        background-color: rgb(208, 208, 208);
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+        outline: none;
+    }
+
+    select option,
+    .main {
+        font-weight: bold;
+    }
+
+    select option {
+        text-align: center;
+    }
+
+    button {
+        width: fit-content;
+        align-self: center;
+        margin: 10px;
+    }
+</style>
+
+</head>
+<body class="center">
+  <h2 style="font-size: 3rem;">Výpočet kurzov mien</h2>
+  <div id="currency-form" style="display: flex; flex-direction: column;">
+    <div style="display: flex; width: 100%; gap: 20px;">
+        <div class="form-item center">
+            <input class="main" type="number" id="amount" placeholder="Zadajte sumu v EUR">
+            <label class="main" for="amount">Suma v EUR:</label>
+        </div>
+        <div class="form-item center">
+          <label for="currency" class="main"id="amountConverted">...</label>
+          <select class="main" id="currency">
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="CZK">CZK</option>
+            <option value="PLN">PLN</option>
+          </select>
+        </div>
+    </div>
+    <button onclick="count()">Vypočítať</button>
+  </div>
+  <div class="result" id="result"></div>
+  
+  <script src="javascript3.js"></script>
+</body>
+</html>
