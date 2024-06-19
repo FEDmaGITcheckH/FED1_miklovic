@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../src/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="overflow-hidden">
     <div id="logo-wrap">
         <div id="logo-img">
             <div class="logo-img-child" id="logo-img-1"></div>
@@ -44,7 +44,7 @@
         <p><a class="nav-link" href="guide.html"><i class="fa-solid fa-circle-info white-icon"></i>Guide</a></p>
     </div>
 
-    <form action="" method="" autocomplete="on">
+    <form action="" method="" autocomplete="on" onsubmit="add(event)" >
         <h1>Add new Book</h1><br>
 
         <label class="required-star" for="author">Author:</label>
@@ -68,8 +68,13 @@
         <label class="required-star" for="price">Book price:</label>
         <input type="number" id="price" placeholder="Book price..." name="price" required>
 
-        <input type="submit" value="Add Book" onclick="add()">
+        <input type="submit" value="Add Book">
     </form>
+
+    <div id="deleteButtons">
+        <button id="deleteLastTitle" onclick="deleteLast()" class="deleteButton">Delete last title</button>
+        <button id="deleteAllTitles" onclick="deleteAll()" class="deleteButton">Delete all titles</button>
+    </div>
 
     <script src="../script/script.js"></script>
 </body>
